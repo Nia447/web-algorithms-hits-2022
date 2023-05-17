@@ -1,0 +1,62 @@
+body{
+    z-index: 2;
+    background-color: #000910;
+    margin: 0px;
+    padding: 0px;
+    height: 1080px;
+    font-family: 'Fredoka', sans-serif;
+}
+.header{
+    z-index: inherit;
+    height: 40px;
+    font-size: 30px;
+}
+canvas{
+    position: absolute;
+}
+.buttons{
+    z-index: inherit;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    height: 1040px;
+}
+.AlgorithmButtons{
+    z-index: inherit;
+    margin: auto;
+    width: 800px;
+    height: 395px;
+}
+.top-buttons{
+    z-index: inherit;
+    min-width: 800px;
+    min-height: 195px;
+    width: 800px;
+    height: 195px;
+    padding-top: 5px;
+}
+.bottom-buttons{
+    z-index: inherit;
+    min-width: 800px;
+    min-height: 200px;
+    width: 800px;
+    height: 200px;
+}
+button{
+    z-index: inherit;
+    width: 260px;
+    height: 190px;
+    float: left;
+    border: 3px solid rgb(4, 0, 255);
+    padding: 0px;
+    margin-left: 5px;
+    border-radius: 15px;
+    font-size: 30px;
+    background-color: #0091ff;
+    transition: background-color 0.2s ease-in-out;
+}
+button:hover{
+    background-color: #00508d;
+}

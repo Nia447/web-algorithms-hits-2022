@@ -1,0 +1,136 @@
+body{
+    background-color: #000910;
+    min-width: 1920px;
+    min-height: 1080px;
+    margin: 0px;
+    font-family: 'Fredoka', sans-serif;;
+}
+.header{
+    background-color: #002541;
+    min-height: 40px;
+    min-width: 1920px;
+    height: 40px;
+    font-size: 30px;
+}
+.main-activity{
+    display: flex;
+}
+.main-field{
+    min-width: 1590px;
+    min-height: 990px;
+    width: 1590px;
+    height: 990px;
+    padding: 5px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.settings{
+    background-color: #004275;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    min-height: 1000px;
+    width: 320px;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+input{
+    width: 80px;
+    height: 30px;
+    margin: auto;
+    border: 1px solid #000910;
+    background-color: #2a4e69;
+    border-radius: 5px;
+    text-align: right;
+    padding: 0px;
+    font-size: 20px;
+}
+p{
+    margin: 3px;    
+}
+.square{    
+    background-color:rgb(1, 59, 104);
+    width: 260px;
+    height: 90px;
+    margin: 5px;
+    border: 2px solid #000910;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.size-inputs{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.node-btns{
+    background-color:#005d7a;
+    width: 260px;
+    height: 60px;
+    border: 2px solid #000910;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.node-make{
+    width: 70px;
+    height: 40px;
+    margin: auto;
+    padding: 0px;
+    border: 1px solid #000910;
+    border-radius: 6px;
+}
+.start-btn{
+    background-color:#005d7a;
+    width: 260px;
+    height: 60px;
+    border: 2px solid #000910;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.set-matrix-btn{
+    background-color:#005d7a;
+    width: 260px;
+    height: 60px;
+    border: 2px solid #000910;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.set-matrix-btns{
+    width: 70px;
+    height: 40px;
+    margin: auto;
+    padding: 0px;
+    border: 1px solid #000910;
+    border-radius: 6px;
+}
+.launch{
+    width: 240px;
+    height: 40px;
+    border: 2px solid #000910;
+    border-radius: 6px;
+}
+button{
+    transition: background-color 0.18s ease-in-out;
+}
+button:hover{
+    background-color: #8b8b8b;
+}
+.footer{
+    background-color: #002541;
+    min-height: 40px;
+    min-width: 1920px;
+    height: 40px;
+    font-size: 30px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="..//src/neuron.png" type="image/png">
+    <link rel="stylesheet" href="../Styles/AI.css">
+    <title>Neural Network</title>
+</head>
+<body>
+    <div class="header">
+        <a style="text-decoration:none" href="../Views/Index.html">Home Page</a>
+    </div>
+    <div class="main-activity">
+        <div class="main-field">
+            <div>
+                <canvas id="canvas"></canvas>
+                <canvas id="downScale" style="display: none;"></canvas>
+                <canvas id="center" style="display: none;"></canvas>
+            </div>
+            <div class="brush_btns">
+                <button class="brush" onclick="Draw()">Draw</button>
+                <button class="brush" onclick="Erase()">Erase</button>
+                <button class="brush" onclick="Clear()">Clear</button>
+                <output class="brush" id="output"onclick="Clear()">0</output>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+    <script src="../AI/InputLayerWeights.js"></script>
+    <script src="../AI/HIddenLayerWeights.js"></script>
+    <script src="../AI/OutputLayerWeights.js"></script>
+    <script src="../AI/functions.js"></script>
+    <script src="../AI/Neuron.js"></script>
+    <script src="../AI/Layer.js"></script>
+    <script src="../AI/NeuralNetwork.js"></script>
+    <script src="../AI/Main.js"></script>
+</body>
+</html>

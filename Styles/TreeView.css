@@ -1,0 +1,100 @@
+body{
+    background-color: #000910;
+    min-width: 1920px;
+    min-height: 1080px;
+    margin: 0px;
+    font-family: 'Fredoka', sans-serif;;
+}
+.header{
+    background-color: #002541;
+    min-height: 40px;
+    min-width: 1920px;
+    height: 40px;
+    font-size: 30px;
+}
+.main-activity{
+    display: flex;
+}
+.main-field{
+    min-width: 1590px;
+    min-height: 990px;
+    width: 1590px;
+    height: 990px;
+    padding: 5px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.settings{
+    background-color: #004275;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    min-height: 1000px;
+    width: 320px;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+p{
+    margin: 10px;
+}
+textarea{
+    resize: none;
+    overflow: auto;
+}
+.square{    
+    background-color:rgb(1, 59, 104);
+    width: 260px;
+    height: 200px;
+    margin: 5px;
+    border: 2px solid #000910;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+}
+.start-btn{
+    background-color:#005d7a;
+    width: 260px;
+    height: 60px;
+    border: 2px solid #000910;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.launch{
+    width: 240px;
+    height: 40px;
+    border: 2px solid #000910;
+    border-radius: 6px;
+}
+button{
+    transition: background-color 0.18s ease-in-out;
+}
+button:hover{
+    background-color: #8b8b8b;
+}
+.footer{
+    background-color: #002541;
+    min-height: 40px;
+    min-width: 1920px;
+    height: 40px;
+    font-size: 30px;
+}
+.output{    
+    background-color:rgb(1, 59, 104);
+    width: 260px;
+    height: 40px;
+    margin: 5px;
+    border: 2px solid #000910;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="..//src/index.png" type="image/png">
+    <link rel="stylesheet" href="../Styles/IndexView.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div class="header">
+        <a style="text-decoration:none" href="#">Home Page</a>
+    </div>
+    <canvas id="canv"></canvas>
+    <div class="buttons">
+        <div class="AlgorithmButtons">
+            <div class="top-buttons">
+                <button onclick="window.location.href = '../Views/AStar.html'">A-Star</button>
+                <button onclick="window.location.href = '../Views/Cluster.html'">Clustering algorithm</button>
+                <button onclick="window.location.href = '../Views/Genetic.html'">Genetic<br>algorithm</button>   
+            </div>
+            <div class="bottom-buttons">
+                <button onclick="window.location.href = '../Views/Ants_Base.html'">Ants</button>
+                <button onclick="window.location.href = '../Views/Tree.html'">Decision<br>tree</button>
+                <button onclick="window.location.href = '../Views/AI.html'">Neural<br>network</button>   
+            </div>
+        </div>
+    </div>
+    <script src="../Index/functions.js"></script>
+    <script src="../Index/node.js"></script>
+    <script src="../Index/Index.js"></script>
+</body>
+</html>

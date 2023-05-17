@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="..//src/cluster.png" type="image/png">
+    <link rel="stylesheet" href="../Styles/ClusterView.css">
+    <title>Cluster</title>
+</head>
+<body>    
+    <div class="header">
+        <a style="text-decoration:none" href="../Views/Index.html">Home Page</a>
+    </div>
+    <div class="main-activity">
+        <div class="main-field">
+            <canvas id="matrix"></canvas>
+        </div>
+        <div class="settings">
+            <div class="square">
+                <p>Astroids</p>
+                <div class="size-inputs">
+                    <input type="number" id="astroidSetter" value="3"/>
+                </div>
+            </div>
+            <div class="square">
+                <p>DBSCAN</p>
+                <p>density &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 radius</p>
+                <div class="size-inputs">
+                    <input type="number" id="mDBSCANsetter" value="4"/>
+                    <input type="number" id="eDBSCANsetter" value="10"/>
+                </div>
+            </div>
+            <div class="node-btns">
+                <button class="node-make" onclick="RemoveNode()">Remove Node</button>
+                <button class="node-make" onclick="SetNode()">Set Node</button>
+                <button class="node-make" onclick="ClearMatrixCluster()">Clear Nodes</button>
+            </div>
+            <div class="start-btn">
+                <button class="launch" onclick="LaunchKmeans()">Launch K-means</button>
+            </div>
+            <div class="start-btn">
+                <button class="launch" onclick="LaunchHierarchy()">Launch Hierarchy</button>
+            </div>
+            <div class="start-btn">
+                <button class="launch" onclick="LaunchDBSCAN()">Launch DBSCAN</button>
+            </div>
+            <div class="set-matrix-btn">
+                <button class="set-matrix-btns" onclick="Donut()">Donut</button>
+                <button class="set-matrix-btns" onclick="Square()">Square</button>
+                <button class="set-matrix-btns" onclick="Triangle()">Triangle</button>
+                <button class="set-matrix-btns" onclick="Circle()">Circle</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+    <script src="../Cluster/Main.js"></script> 
+    <script src="../Cluster/Functions.js"></script> 
+    <script src="../Cluster/AlgorithmKmeans.js"></script> 
+    <script src="../Cluster/AlgorithmHierarchy.js"></script> 
+    <script src="../Cluster/AlgorithmDBSCAN.js"></script> 
+</body>
+</html>

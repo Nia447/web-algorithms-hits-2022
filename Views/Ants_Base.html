@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="..//src/ant.png" type="image/png">
+    <link rel="stylesheet" href="../Styles/Ants_Base.css">
+    <title>Ants_Base</title>
+</head>
+<body>    
+    <div class="header">
+        <a style="text-decoration:none" href="../Views/Index.html">Home Page</a>
+    </div>
+    <div class="main-activity">
+        <div class="main-field">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="settings">
+            <div class="square">
+                <div class="len-outputs">
+                    <output type="number" id="minLength" value="70">Current Minimal Length</output>
+                </div>
+            </div>
+            <div class="node-btns">
+                <button class="node-make" onclick="setNode()">Set node</button>
+                <button class="node-make" onclick="removeNode()">Remove nodes</button>
+            </div>
+            <div class="start-btn">
+                <button class="globalBtns" onclick="Launch()">Launch</button>
+            </div>
+            <div class="start-btn">
+                <button class="globalBtns" onclick="Refresh()">Refresh</button>
+            </div>
+            <div class="square-2">
+                <div class="consts">
+                    <p>ALPHA</p>
+                    <input type="number" id="AlphaSeter" value="1"/>
+                </div>
+                <div class="consts">
+                    <p>BETA</p>
+                    <input type="number" id="BetaSeter" value="1"/>
+                </div>
+                <div class="consts">
+                    <p>Q</p>
+                    <input type="number" id="QSetter" value="1"/>
+                </div>
+                <div class="consts">
+                    <p>M</p>
+                    <input type="number" id="MSetter" value="1"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+    <script src="../Ants_base/Functions.js"></script>
+    <script src="../Ants_base/Position.js"></script>
+    <script src="../Ants_base/Way.js"></script>
+    <script src="../Ants_base/Edge.js"></script>
+    <script src="../Ants_base/Node.js"></script>
+    <script src="../Ants_base/Algorithm.js"></script>
+    <script src="../Ants_base/launcher.js"></script>
+</body>
+</html>

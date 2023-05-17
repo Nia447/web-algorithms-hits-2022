@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="..//src/gen.png" type="image/png">
+    <link rel="stylesheet" href="../Styles/GeneticView.css">
+    <title>Genetic Algorithm</title>
+</head>
+<body>    
+    <div class="header">
+        <a style="text-decoration:none" href="../Views/Index.html">Home Page</a>
+    </div>
+    <div class="main-activity">
+        <div class="main-field">
+            <canvas id="matrix"></canvas>
+        </div>
+        <div class="settings">
+            <div class="square">
+                <p>Set Nodes</p>
+                <div class="nodeCreate-btn">
+                    <button class="node-make" onclick="SetNode()">Set</button>
+                    <button class="node-make" onclick="RemoveNode()">Remove</button>
+                    <button class="node-make" onclick="ClearNodes()">Clear</button>
+                </div>
+            </div>
+            <div class="square">
+                <p>Generation</p>
+                <div class="size-inputs">
+                    <input type="number" id="generationSetter" value="6000"/>
+                </div>
+            </div>
+            <div class="square">
+                <p>Population</p>
+                <div class="size-inputs">
+                    <input type="number" id="populationSetter" value="10"/>
+                </div>
+            </div>
+            <div class="square">
+                <p>Mutation %</p>
+                <div class="size-inputs">
+                    <input type="number" id="mutationSetter" value="50"/>
+                </div>
+            </div>
+            <div class="start-btn">
+                <button class="globalBtns" onclick="LaunchGenetic()">Launch</button>
+            </div>
+            <div class="minLen">
+                <p>Current Lenght: </p><output type="number" id="MinimalLength" value="0"></output>
+            </div>
+            <div class="minLen">
+                <p>Generations: </p><output type="number" id="Generations" value="0"></output>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+    <script src="../GeneticAlgorithm/Functions.js"></script> 
+    <script src="../GeneticAlgorithm/Generation.js"></script> 
+    <script src="../GeneticAlgorithm/Genetic.js"></script> 
+    <script src="../GeneticAlgorithm/Individual.js"></script> 
+    <script src="../GeneticAlgorithm/Main.js"></script> 
+</body>
+</html>

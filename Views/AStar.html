@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="..//src/star.png" type="image/png">
+    <link rel="stylesheet" href="../Styles/AStarView.css">
+    <title>A-Star</title>
+</head>
+<body>    
+    <div class="header">
+        <a style="text-decoration:none" href="../Views/Index.html">Home Page</a>
+    </div>
+    <div class="main-activity">
+        <div class="main-field">
+            <canvas id="matrix"></canvas>
+        </div>
+        <div class="settings">
+            <div class="square">
+                <p>Labyrinth size</p>
+                <div class="size-inputs">
+                    <input type="number" id="widthSetter" value="70"/>
+                    <input type="number" id="heightSetter" value="70"/>
+                </div>
+                <div class="labCreate-btn">
+                    <button class="setter" id="labCreate" onclick="Create()">Create Labytinth</button>
+                </div>
+            </div>
+            <div class="wall-btns">
+                <button class="wall-make" onclick="setWall()">Set wall</button>
+                <button class="wall-make" onclick="removeWall()">Remove wall</button>
+                <button class="wall-make" onclick="clearMatrix()">Clear</button>
+            </div>
+            <div class="square">
+                <p>Start position</p>
+                <div class="size-inputs">
+                    <input type="number" id="startPositionX" value="1"/>
+                    <input type="number" id="startPositionY" value="1"/>
+                </div>
+                <div class="labCreate-btn">
+                    <button class="setter" onclick="startPosBtn()">Set on map</button>
+                </div>
+            </div>
+            <div class="square">
+                <p>Finish Position</p>
+                <div class="size-inputs">
+                    <input type="number" id="finishPositionX" value="69"/>
+                    <input type="number" id="finishPositionY" value="69"/>
+                </div>
+                <div class="labCreate-btn">
+                    <button class="setter" onclick="finishPosBtn()">Set on map</button>
+                </div>
+            </div>
+            <div class="start-btn">
+                <button class="globalBtns" onclick="Launch()">Launch</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+    <script src="../AStar/AStar.js"></script>
+    <script src="../AStar/LabyrinthCreator.js"></script>    
+</body>
+</html>

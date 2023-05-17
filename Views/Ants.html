@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/AStarView.css">
+    <title>Ants</title>
+</head>
+<body>    
+    <div class="header">
+        <a style="text-decoration:none" href="../Views/Index.html">Home Page</a>
+    </div>
+    <div class="main-activity">
+        <div class="main-field">
+            <canvas id="world"></canvas>
+        </div>
+        <div class="settings">
+            <div class="start-btn">
+                <button class="globalBtns" onclick="CreateWorld()">Create World</button>
+            </div>
+            <div class="start-btn">
+                <button class="globalBtns" onclick="AddWall()">Add wall</button>
+            </div>
+            <div class="start-btn">
+                <button class="globalBtns" onclick="RemoveWall()">Remove wall</button>
+            </div>
+            <div class="start-btn">
+                <button class="globalBtns" onclick="SetColonyStartPosition()">Set colony start position</button>
+            </div>
+            <div class="start-btn">
+                <button class="globalBtns" onclick="Feed()">Feed</button>
+            </div>
+            <div class="start-btn">
+                <button class="globalBtns" onclick="Launch()">Launch</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+    <script src="../Ants/Functions.js"></script>
+    <script src="../Ants/Position.js"></script>
+    <script src="../Ants/BaseObject.js"></script>
+    <script src="../Ants/Colony.js"></script>
+    <script src="../Ants/Food.js"></script>
+    <script src="../Ants/Pheromone.js"></script>
+    <script src="../Ants/TestAnts.Js"></script>
+    <script src="../Ants/World.js"></script>
+    <script src="../Ants/Wall.js"></script>
+    <script src="../Ants/cave.js"></script>
+    <script src="../Ants/launcher.js"></script>
+</body>
+</html>

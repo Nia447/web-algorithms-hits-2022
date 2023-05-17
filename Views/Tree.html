@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="..//src/tree.png" type="image/png">
+    <link rel="stylesheet" href="../Styles/TreeView.css">
+    <title>Tree Decision</title>
+</head>
+<body>    
+    <div class="header">
+        <a style="text-decoration:none" href="../Views/Index.html">Home Page</a>
+    </div>
+    <div class="main-activity">
+        <div class="main-field">
+            <canvas id="matrix"></canvas>
+        </div>
+        <div class="settings">
+            <p>Your csv-text for Create Tree</p>
+            <div class="square">
+                <textarea id="TreeSettings" rows="11" cols="30" spellcheck="false">Enemy;Play;Leader;Rain;Win
+Up;Home;On place;Yes;No
+Up;Home;On place;No;Yes
+Up;Home;Skip;No;No
+Down;Home;Skip;No;Yes
+Down;In guest;Skip;No;No
+Down;Home;Skip;Yes;Yes
+Up;In guest;On place;Yes;No
+Down;In guest;On place;No;Yes</textarea>
+                <div id="TreeSettingsValue"></div>
+            </div>
+            <div class="start-btn">
+                <button class="launch" onclick="CreateTree()">Create Tree</button>
+            </div>
+            <p>Your csv-text for Answer</p>
+            <div class="square">
+                <textarea id="InputParams" rows="11" cols="30" spellcheck="false">Down;In guest;Skip;No</textarea>
+            </div>
+            <div class="start-btn">
+                <button class="launch" onclick="Launch()">Launch</button>
+            </div>
+            <div class="output">
+                <output type="text" id="Answer" value=""></output>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+    <script src="../TreeDecision/PapaParse-5.0.2/papaparse.js"></script>
+    <script src="../TreeDecision/Data.js"></script>
+    <script src="../TreeDecision/Node.js"></script>
+    <script src="../TreeDecision/Leaf.js"></script>
+    <script src="../TreeDecision/Tree.js"></script>
+    <script src="../TreeDecision/Main.js"></script> 
+    <script src="../TreeDecision/ID3.js"></script>
+</body>
+</html>
